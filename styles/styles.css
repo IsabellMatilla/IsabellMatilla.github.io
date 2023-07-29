@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Lilita+One:regular);
+
+body {
+    font-family: 'Lilita One', Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+}
+
+header {
+    text-align: center;
+    background-image: url('../images/riktiga_bilden.png');
+    background-size: auto 100%; /* Auto width, full height */
+    background-repeat: repeat-x; /* Repeat horizontally */
+    background-position: center top; /* Center the image horizontally */
+    height: 300px; /* Set a fixed height for the header */
+    color: rgb(175, 81, 178);
+    overflow: hidden;
+}
+
+/* Add styling for the header text */
+header h1, header p {
+    margin: 0;
+    padding: 10px;
+}
+
+/* Add animation for "Isabell Mattila" */
+.name-animation {
+    position: relative;
+    white-space: nowrap; /* Prevent text from wrapping to multiple lines */
+    overflow: hidden; /* Hide any overflowing text */
+}
+
+.name-animation h1 {
+    display: inline-block; /* Display the text in a single line */
+    animation: scroll-left 20s linear infinite; /* Adjust the duration to your preference */
+    animation-delay: 1s; /* Delay the animation to give time for the text to be fully visible */
+    white-space: nowrap; /* Prevent text from wrapping to multiple lines */
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%); /* Start the text from the left of the header */
+    }
+    100% {
+        transform: translateX(-50%); /* Move the text to the left of the header */
+    }
+}
+
+
+/* Add styling for the header image */
+header img {
+    width: 100%; /* Set the image width to 100% of its container (header) */
+    height: auto; /* Allows the image to scale proportionally */
+    display: block; /* Ensures the image is a block element (full width) */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+header h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 24px;
+    margin: 0;
+}
+
+section {
+    padding: 40px;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+body {
+    background-color: #FCC64B; /* Light blue color */
+}
+
+footer {
+    background-color: #FCC64B;
+    color: rgb(250, 224, 224);
+    text-align: center;
+    padding: 10px;
+}
